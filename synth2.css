@@ -1,0 +1,208 @@
+/* Matthew Williams Basic Synth2 13/01/2025*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 900 */
+
+/* .orbitron-<uniquifier {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}  */
+
+
+body {
+  font-family: "Orbitron", sans-serif; 
+  font-size: 10px; 
+  background-color: black;   
+}
+
+.volume {
+  width: 10%;
+  /* Width of the outside container */
+  padding: 1%;
+  border-style: solid;
+
+}
+
+.waveforms {
+  width: 10%;
+  /* Width of the outside container */
+  padding: 1%;
+  border-style: solid;
+}
+
+.unison {
+  width: 10%;
+  /* Width of the outside container */
+  padding: 1%;
+  border-style: solid;
+}
+
+.delay {
+  width: 10%;
+  /* Width of the outside container */
+  padding: 1%;
+  border-style: solid;
+}
+
+/* The slider itself */
+.slider,
+.wfslider,
+.unislider,
+.fbslider,
+.dtslider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+
+}
+
+/* Mouse-over effects */
+.dtslider:hover,
+.wfslider:hover,
+.unislider:hover,
+.fbslider:hover,
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.dtslider::-webkit-slider-thumb,
+.wfslider::-webkit-slider-thumb,
+.unislider::-webkit-slider-thumb,
+.fbslider::-webkit-slider-thumb,
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.dtslider::-moz-range-thumb,
+.wfslider::-moz-range-thumb,
+.unislider::-moz-range-thumb,
+.fbslider::-moz-range-thumb,
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.keyboard {
+  width: 1030px;
+  position: absolute;
+  padding: 20px;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: darkgray;
+  border-color: #04AA6D;
+  
+
+}
+
+.modules {
+  width: 1000px;
+  border-style: solid;
+  border-color: #04AA6D;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.keys {
+  width: 984px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+  
+}
+
+.wholeTone {
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 100px;
+  width: 30px;
+  font-family: "Orbitron", sans-serif; 
+  font-size: 10px;
+  color: green;
+  background-color: whitesmoke;
+  font-weight: bolder;
+
+}
+
+.semiTone {
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 70px;
+  width: 30px;
+  font-family: "Orbitron", sans-serif; 
+  font-size: 10px;
+  color: green;
+  background-color: black;
+  font-weight: bolder
+
+}
+
+#dtdemo,
+#fbdemo,
+#unidemo,
+#wfdemo,
+#demo {
+  color: green;
+  font-weight: bolder;
+}
+
+h3 {
+  color: black;
+  font-weight: bolder;
+}

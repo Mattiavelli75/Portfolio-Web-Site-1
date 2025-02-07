@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="synth2.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    </style>
+    <title>Synthesiser</title>
+</head>
+<body>
+    <div class="keyboard">
+        <h3>M-TRON:SP2025</h3>
+    <div class="modules" >
+        <div class="volume">
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="slider" id="myRange">
+            <p>Volume: <span id="demo"></span></p>
+        </div>  
+
+        <div class="waveforms">
+            <input type="range" min="0" max="3" step="1" value="0" class="wfslider" id="wfRange">
+            <p>Waveform: <span id="wfdemo"></span></p>
+        </div>  
+
+        <div class="unison">
+            <input type="range" min="0" max="1" step="0.01" value="0.0" class="unislider" id="uniRange">
+            <p>Width: <span id="unidemo"></span></p>            
+        </div>  
+
+        <div class="delay">
+            <input type="range" min="0" max="1" step="0.01" value="0.0" class="fbslider" id="fbRange">
+            <p>Feedback: <span id="fbdemo"></span></p>   
+            <input type="range" min="0" max="1" step="0.01" value="0.0" class="dtslider" id="dtRange">
+            <p>Time: <span id="dtdemo"></span></p>      
+        </div>  
+
+    </div>
+        <div class="keys">
+            <button class="wholeTone" data-note="C">C</button>       
+            <button class ="semiTone" data-note="CS">C#</button>
+            <button class="wholeTone" data-note="D">D</button>  
+            <button class ="semiTone" data-note="DS">D#</button>
+            <button class="wholeTone" data-note="E">E</button>               
+            <button class="wholeTone" data-note="F">F</button>       
+            <button class ="semiTone" data-note="FS">F#</button>
+            <button class="wholeTone" data-note="G">G</button>  
+            <button class ="semiTone" data-note="GS">G#</button>
+            <button class="wholeTone" data-note="A">A</button>       
+            <button class ="semiTone" data-note="AS">A#</button>
+            <button class="wholeTone" data-note="B">B</button>  
+            <button class="wholeTone" data-note="C1">C</button>              
+        </div>
+    </div>
+    <script src="synth2.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

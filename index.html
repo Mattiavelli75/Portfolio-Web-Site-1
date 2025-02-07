@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- ? Font Import - Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!-- font-awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+      <!-- ? Link CSS File -->
+      <link rel="stylesheet" href="style.css" />
+      <title>Home</title>
+      <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+   </head>
+   <body>
+      <!-- ? Video source background -->
+      <video  class="video-container" muted autoplay loop>
+         <source src="./res/ocean1.mp4" type="video/mp4"/>
+      </video>            
+      <nav>
+         <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+               <h1 class="portfolio">Portfolio</h1>
+               <!-- ?Nav Section -->
+               <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+               </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+               <li>
+                  <a href="index.html">home</a>
+               </li>
+               <li>
+                  <a href="about.html">about</a>
+               </li>
+               <li>
+                  <a href="contact.html">contact</a>
+               </li>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+               <li>
+                  <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.twitter.com" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/matthew-williams-556b804a/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.github.com/" target="_blank">
+                  <i class="fab fa-github"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- Video switch -->
+      <button class="switch-btn">
+      <span>
+      play
+      </span>
+      <span>
+      pause
+      </span>
+      <span>
+      <span class="switch"></span>
+      </span>
+      </button>
+      <!-- ? Main Section -->
+      <main class="grid">
+         <!-- ? Welcome Section -->
+         <div class="welcome">
+            <h2></h2>
+            <p>
+
+            </p>
+         </div>
+         <div class="welcome">
+            <h2>Welcome</h2>
+            <p>
+               My name is Matthew Williams and the purpose of this web-site is to showcase my new software development skills
+               gained from participating in the <span class="just-it">Just-IT Software Development Boot-Camp.</span>
+               <p>I hope you enjoy your stay.</p>
+            </p>
+         </div>
+         <h3>Projects:</h3>
+         <!-- ? Article Cards -->
+         <div class="card">
+            <h4 class="links">
+               <a href="https://github.com/Mattiavelli75/MySQL-PL-SQL---Student-Registration-System/tree/main" target="_blank" class="topics">MySQLDB: Student Enrolment System</a>
+            </h4>
+            <p>
+               I developed a MySQL and PL/SQL student enrollment program that leverages DDL for creating and managing database structures, 
+               including tables and relationships. Using DML, the system handles student registrations, course assignments, and updates efficiently.                              
+            </p>
+         </div>
+         <div class="card" >
+            <h4 class="links">
+               <a href="synth2.html" class="topics" id="synth2">Javascript: Synthesizer Application </a>
+            </h4>
+            <p>
+               I created a JavaScript synthesizer app with a full octave keyboard, waveform selector (sine, square, sawtooth, triangle), 
+               unison effects for layered sound, and a delay effect. 
+               It's user-friendly for both beginners and pros to explore music and sound design.
+            </p>
+         </div>
+         <div class="card">
+            <h4 class="links">
+               <a href="https://github.com/Mattiavelli75/Python-Weather-Forecast-Application/tree/main" target="_blank" class="topics">Python: Weather Forecast Application</a>
+            </h4>
+            <p>
+               My Python weather forecast app uses a dicts.json file to handle weather data for almost 50,000 cities globally. 
+               It allows users to add, remove, view single entries, or browse all forecasts for international cities, 
+               making it a versatile tool for tracking weather conditions worldwide.
+            </p>
+         </div>
+      </main>
+      <!-- Preloader -->
+      <div class="preloader">
+         <img src="./res/preloader3.gif" alt="preloader">
+      </div>
+      <script src="./app.js"></script>
+   </body>
+</html>

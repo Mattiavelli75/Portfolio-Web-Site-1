@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="about.css" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+  </head>
+  <body>
+          <!-- ? Video source background -->
+          <video  class="video-container" muted autoplay loop>
+            <source src="./res/ocean2.mp4" type="video/mp4"/>
+         </video> 
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <h1 class="portfolio">Portfolio</h1>
+          <!-- ?Nav Section -->
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/matthew-williams-556b804a/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+         </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="title">
+        <h1>About me</h1>
+        <p class="intro">Welcome to my about me page where you can find out a little more about my history, vision and goals.</p>
+      </div>
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img id="image" alt="about picture" />
+        </article>
+        <article class="about">
+          <!-- btn container  -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">history</button>
+            <button class="tab-btn" data-id="vision">tech stack</button>
+            <button class="tab-btn" data-id="goals">goals</button>
+          </div>
+          <article class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>history</h4>
+              <p>I am an experienced IT support engineer who is looking for a career change into a more development focussed roll. Below is a list of some career highlights so far: </p>
+              <ul>
+                <li>Accenture - Google Play Support.</li>
+                <li>Condé Nast - Financial Application Support.</li>
+                <li>Shell Trading - Service Desk Analyst.</li>                
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="vision">
+              <h4>Tech Stack:</h4>
+              <li>MySQL & Oracle: SQL/PL-SQL.</li>
+              <li>Web-development: JavaScript, HTML5 & CSS.</li>
+              <li>Python programming.</li>
+              <li>Java programming.</li> 
+              <li>Linux command line & Bash Shell scripting.</li>
+              <li>Windows OS.</li>
+              <li>FIX protocol (Financial Information Exchange).</li>              
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="goals">
+              <h4>goals</h4>
+              <p>I am an IT support engineer transitioning into software engineering, with strong problem-solving, scripting, and troubleshooting skills. 
+                I am Passionate about software development and eager to apply my technical expertise in a development role.</p>
+            </div>
+            <!-- end of single item -->
+          </article>
+        </article>
+      </div>
+      <button class="switch-btn">
+        <span>
+        play
+        </span>
+        <span>
+        pause
+        </span>
+        <span>
+        <span class="switch"></span>
+        </span>
+        </button>
+        <div class="preloader">
+            <img src="./res/preloader3.gif" alt="preloader">
+         </div>
+      <script src="./about.js"></script>
+  </body>
+</html>
